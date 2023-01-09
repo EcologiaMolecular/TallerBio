@@ -2,7 +2,7 @@
 title: 📊 Introducción a la bioinformática
 linkTitle: Introduccón
 summary: Aprender a analizar datos genómicos generados con tecnologías de secuenciación masiva utilizando herramientas de software libre. 
-date: '2021-01-24'
+date: '2023-01-09'
 type: book
 tags:
   - current

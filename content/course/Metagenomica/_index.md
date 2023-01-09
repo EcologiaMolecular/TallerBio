@@ -1,8 +1,8 @@
 ---
 title: 🤖 Metagenómica
 linkTitle: Introucción
-summary: Un taller introductorio a la metagenómica y a la reconstrucción de genomas.
-date: '2021-01-24'
+summary: Aprender a analizar datos metagenómicos utilizando herramientas de software libre.
+date: '2023-01-16'
 type: book
 tags:
   - previous
