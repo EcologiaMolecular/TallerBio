@@ -1,8 +1,8 @@
 ---
 title: 🤖 Metagenómica
-linkTitle: Introucción
-summary: Aprender a analizar datos metagenómicos utilizando herramientas de software libre.
-date: '2023-01-16'
+linkTitle: Introduccón
+summary: Aprender a analizar datos genómicos generados con tecnologías de secuenciación masiva utilizando herramientas de software libre. 
+date: '2023-01-09'
 type: book
 tags:
   - previous
