@@ -23,7 +23,7 @@ Computadora con al menos 8Gb de memoria.
 Acceso a una terminal de Linux.
 nociones de cómputo en línea de comandos (Linux)
 
-## programa
+## Programa
 
 Día 1: Introducción a la metagenómica y al análisis de secuencias
 ¿Qué es la metagenómica?

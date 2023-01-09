@@ -1,43 +1,66 @@
 ---
-title: 📊 Learn Data Science
-linkTitle: Data Science
-summary: An example of using Wowchemy's Book layout for publishing online courses.
-date: '2021-01-24'
+title: 📊 Genómica de poblacional
+linkTitle: Introduccón
+summary: Comprender las bases teóricas de obtención de marcadores SNPs a nivel genoma mediante técnicas de representación reducida, y análisis de los datos para resolver problemas genético-poblacionales.
+date: '2023-01-23'
 type: book
 tags:
   - current
 ---
 
-{{< figure src="featured.jpg" >}}
+## Introducción
 
-{{< toc hide_on="xl" >}}
+Los métodos de representación reducida para la obtención de SNPs (Single Nucleotide Polymorphism) han permitido reemplazar el uso de marcadores microsatélites y mitocondriales para el estudio de la ecología poblacional, brindando más resolución para delimitar poblaciones, estructura, flujo y parentesco. En este taller revisaremos los métodos más recientes para la generación de información y análisis de datos obtenidos, empleando paquetes de análisis integrados como Stacks y dDocent, así como scripts ad hoc en R.
 
-## What you will learn
+## ¿A quién va dirigido? 
 
-- Fundamental {{<hl>}}Python programming skills{{</hl>}}
-- {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with the {{<hl>}}Scikit{{</hl>}}, including data visualization with {{<hl>}}Plotly{{</hl>}} and data wrangling with {{<hl>}}Pandas{{</hl>}}
+Este curso está dirigido a personas que requieren introducirse al análisis genómico poblacional con marcadores SNPs, y que tengan nociones de cómputo en línea de comandos
 
-## Program overview
+## Pre-requisitos:
 
-The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.
+De forma general,
+Computadora con al menos 8Gb de memoria.
+Acceso a una terminal de linux
+nociones de cómputo en línea de comandos (Linux)
+idealmente haber tomado el taller Introducción a la bioinformática :)
 
-## Courses in this program
 
-{{< list_children >}}
+## Programa
 
-## Meet your instructor
+Día 1:  Caracterización y análisis de SNPs 
+Tecnologías de secuenciación masiva
+Genotipificación por secuenciación
+Re-secuenciación de genoma completo
+Librerías de representación restringida 
+GT-seq
+RAD-seq
+NextRAD
+RAD-capture
+2b-RAD-seq
 
-{{< mention "admin" >}}
+Día 2:  Construcción de librerías 2bRAD
+Calidad del ADN genómico
+Protocolo de Librerías de 2bRAD
+Problemas comunes y soluciones
 
-## FAQs
+Día 3:  Introducción a la informática en genómica poblacional 
+Generalidades en el análisis de SNPs para genómica poblacional
+Formatos básicos de bases de datos: fastq.gz, VCF, plink, genepop
+Generación de referencias genómicas (de novo, genomas completos)
+Stacks y dDocent
+Mapeo de lecturas
+Imputación de genotipos
 
-{{< spoiler text="Are there prerequisites?" >}}
-There are no prerequisites for the first course.
-{{< /spoiler >}}
+Día 4:  Análisis de la información genómica I
+Obtención y manipulación de tablas de variantes genéticas
+Filtrado de SNPs
+Medidas de diversidad genética (He, Ho, pi)
+Cálculo de distancia genética
+Relaciones de parentesco
 
-{{< spoiler text="How often do the courses run?" >}}
-Continuously, at your own pace.
-{{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="python" >}}
+Día 5: Análisis de la información genómica II
+Análisis de estructura poblacional (Fst, Fst por pares, PCA, Structure, DAPC)
+Identificación de loci potencialmente bajo selección
+Análisis de asociación entre SNPs y variables ambientales
+Estimación de dirección y tasas de migración contemporánea interpoblacional

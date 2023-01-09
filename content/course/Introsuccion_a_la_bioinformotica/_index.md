@@ -24,7 +24,7 @@ Este curso está dirigido a personas que desean desarrollar habilidades bioinfor
 Computadora con al menos 8Gb de memoria.
 Acceso a una terminal de linux. (puede ser via terminal de MS.DOS o Windows PowerShell) 
 
-## programa
+## Programa
 
 Día 1: Introducción a la bioinformática 
 ¿Qué es la genómica y qué preguntas podemos contestar?
