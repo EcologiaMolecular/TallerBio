@@ -6,7 +6,7 @@ title: Mirna Vázquez Rosas Landa
 superuser: true
 
 # Role/position
-role: Bioinformática, Metagenomas, Desarrollo de paquetes de R
+role: Instructor taller de metagenómica
 
 # Organizations/Affiliations
 organizations:
