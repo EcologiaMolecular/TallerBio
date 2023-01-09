@@ -1,7 +1,7 @@
 ---
 title: 🤖 Metagenómica
 linkTitle: Introucción
-summary: An example of using Wowchemy's Book layout for publishing online courses.
+summary: Un taller introductorio a la metagenómica y a la reconstrucción de genomas.
 date: '2021-01-24'
 type: book
 tags:

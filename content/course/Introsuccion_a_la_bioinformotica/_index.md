@@ -1,43 +1,64 @@
 ---
-title: 📊 Learn Data Science
-linkTitle: Data Science
-summary: An example of using Wowchemy's Book layout for publishing online courses.
+title: 📊 Introducción a la bioinformática
+linkTitle: Introduccón
+summary: Aprender a analizar datos genómicos generados con tecnologías de secuenciación masiva utilizando herramientas de software libre. 
 date: '2021-01-24'
 type: book
 tags:
   - current
 ---
 
-{{< figure src="featured.jpg" >}}
+## Introducción
 
-{{< toc hide_on="xl" >}}
+En los últimos años la genómica ha cobrado gran importancia para entender procesos ecológicos y evolutivos en diferentes organismos a lo largo del árbol de la vida. En este taller revisaremos los métodos más recientes para analizar datos generados con tecnologías de secuenciación masiva, usando herramientas de software libre.
 
-## What you will learn
+Durante este taller aprenderás a trabajar desde una terminal de linux, hacer filtros de calidad y algunos pipelines de análisis generalmente utilizados en proyectos genómicos.
 
-- Fundamental {{<hl>}}Python programming skills{{</hl>}}
-- {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with the {{<hl>}}Scikit{{</hl>}}, including data visualization with {{<hl>}}Plotly{{</hl>}} and data wrangling with {{<hl>}}Pandas{{</hl>}}
 
-## Program overview
+## ¿A quién va dirigido? 
 
-The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.
+Este curso está dirigido a personas que desean desarrollar habilidades bioinformáticas para el análisis de secuencias.
 
-## Courses in this program
+## Pre-requisitos:
 
-{{< list_children >}}
+Computadora con al menos 8Gb de memoria.
+Acceso a una terminal de linux. (puede ser via terminal de MS.DOS o Windows PowerShell) 
 
-## Meet your instructor
+## programa
 
-{{< mention "admin" >}}
+Día 1: Introducción a la bioinformática 
+¿Qué es la genómica y qué preguntas podemos contestar?
+Sistemas operativos, servidores
+Introducción a la línea de comandos
+Tecnologías de secuenciación masiva y bases de datos
+Formatos de archivos de secuencias 
+descargar archivos de SRA y GitHub
 
-## FAQs
+Día 2: Lenguajes de programación
+comandos comunes 
+presentación de lenguajes (p ej, Bash, Perl, Python, R)Ejercicio de análisis
+comparativo de genomas bacterianos
 
-{{< spoiler text="Are there prerequisites?" >}}
-There are no prerequisites for the first course.
-{{< /spoiler >}}
+Día 3:  Estrategias de DNA ambiental
+Marcadores moleculares de diversidad
+Filtrado de lecturas, evaluación de calidad
+Remoción de adaptadores y demultiplexing
+Asignación taxonómica y retroalimentación
 
-{{< spoiler text="How often do the courses run?" >}}
-Continuously, at your own pace.
-{{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="python" >}}
+Día 4: Ensambles
+Ensambles de novo y ensambles con referencia
+Genoma
+Transcriptoma
+Metagenoma
+ejercicio de un ensamble de una bacteria (lecturas cortas)
+descarga de lecturas cortas de genoma pequeño
+ensamble con distintos parámetros
+revisión de métricas de ensamble
+
+
+Día 5: Anotación
+presentación sobre predicción, anotación, clasificación y asignación taxonómica
+ejercicio
+Predicción de genes
+Anotación de genomas
