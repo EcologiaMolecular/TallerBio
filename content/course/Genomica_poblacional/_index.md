@@ -1,7 +1,7 @@
 ---
 title: 📊 Genómica de poblacional
 linkTitle: Introduccón
-summary: Aprender a analizar datos genómicos generados con tecnologías de secuenciación masiva utilizando herramientas de software libre. 
+summary: Comprender las bases teóricas de obtención de marcadores SNPs a nivel genoma mediante técnicas de representación reducida, y análisis de los datos para resolver problemas genético-poblacionales. 
 date: '2023-01-09'
 type: book
 tags:
