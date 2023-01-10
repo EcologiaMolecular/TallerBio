@@ -28,7 +28,7 @@ Como parte de los cursos intersemestrales en el Posgrado de Ciencias del Mar y L
 
 ¡Nuestra motivación es enseñar y compartir nuestro conocimiento!
 
-¡Divierte!
+¡Diviértete!
 
 
 
