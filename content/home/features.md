@@ -2,7 +2,7 @@
 widget: featurette
 headless: true
 weight: 20
-title: ¿Qué encontraras?
+title: ¿Qué encontrarás?
 feature:
   - icon: chalkboard-teacher
     icon_pack: fas
