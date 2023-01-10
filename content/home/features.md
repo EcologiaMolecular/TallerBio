@@ -12,7 +12,7 @@ feature:
     icon_pack: fas
     name: Material
     description:
-  - icon: people-roof
+  - icon: atom
     icon_pack: fas
     name: Comunidad
     description:
