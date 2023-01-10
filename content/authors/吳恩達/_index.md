@@ -10,7 +10,7 @@ authors:
 superuser: false
 
 # Role/position
-role: Instructor del taller de introducción a la bioinformática
+role: Instructor - taller de introducción a la bioinformática
 
 # Organizations/Affiliations
 organizations:

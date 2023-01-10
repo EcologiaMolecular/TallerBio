@@ -6,7 +6,7 @@ title: Federico Alberto Abreu Grobois
 superuser: true
 
 # Role/position
-role: Instructor del taller e genómica poblacional
+role: Instructor - taller e genómica poblacional
 
 # Organizations/Affiliations
 organizations:

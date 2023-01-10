@@ -6,7 +6,7 @@ title: Mirna Vázquez Rosas Landa
 superuser: true
 
 # Role/position
-role: Instructor taller de metagenómica
+role: Instructor - taller de metagenómica
 
 # Organizations/Affiliations
 organizations:
