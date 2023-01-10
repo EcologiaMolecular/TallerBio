@@ -1,5 +1,5 @@
 ---
-title: 📊 Genómica de poblacional
+title: :ocean: Genómica de poblacional
 linkTitle: Introduccón
 summary: Comprender las bases teóricas de obtención de marcadores SNPs a nivel genoma mediante técnicas de representación reducida, y análisis de los datos para resolver problemas genético-poblacionales. 
 date: '2023-01-09'
