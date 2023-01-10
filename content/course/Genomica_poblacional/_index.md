@@ -1,5 +1,5 @@
 ---
-title: :display-code: Genómica de poblacional
+title: :heart: Genómica de poblacional
 linkTitle: Introduccón
 summary: Comprender las bases teóricas de obtención de marcadores SNPs a nivel genoma mediante técnicas de representación reducida, y análisis de los datos para resolver problemas genético-poblacionales. 
 date: '2023-01-09'
@@ -8,7 +8,7 @@ tags:
   - current
 ---
 
-## Introducción
+## Introducción :heart:
 
 Los métodos de representación reducida para la obtención de SNPs (Single Nucleotide Polymorphism) han permitido reemplazar el uso de marcadores microsatélites y mitocondriales para el estudio de la ecología poblacional, brindando más resolución para delimitar poblaciones, estructura, flujo y parentesco. En este taller revisaremos los métodos más recientes para la generación de información y análisis de datos obtenidos, empleando paquetes de análisis integrados como Stacks y dDocent, así como scripts ad hoc en R.
 
