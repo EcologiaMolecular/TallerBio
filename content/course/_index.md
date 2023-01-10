@@ -11,4 +11,4 @@ banner:
   image: ''
 ---
 
-Explora los cursos y el material! 
+¡Explora los cursos y el material! 
