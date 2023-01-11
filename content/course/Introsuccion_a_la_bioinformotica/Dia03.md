@@ -31,6 +31,9 @@ Amplicones de columna de agua en distintos puntos del Golfo e México, las muest
   - WC8.fasta  
   - WC9.fasta
 
+Copia los archivos que estan en el directorio el material del curso.
+
+
 ¡Haz un **head** de los archivos! 
 
 ```
