@@ -1,5 +1,5 @@
 ---
-title: El grupo de datos
+title: Ejercicio día 03
 date: '2021-01-01'
 type: book
 weight: 20
