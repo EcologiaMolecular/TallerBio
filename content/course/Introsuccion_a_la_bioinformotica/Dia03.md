@@ -19,7 +19,7 @@ java -jar /opt/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 10 -phred33 -tr
 - Repite el ejercicio con los resultados de [**PEAR**](https://cme.h-its.org/exelixis/web/software/pear/)
 
 
-En equipos corran fastqc y definan que cambios vieron en la corrida.
+En equipos corran [**fastqc**](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) y definan que cambios vieron en la corrida.
 
 
 ## Ejemplo de la vida real
