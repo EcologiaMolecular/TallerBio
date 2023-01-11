@@ -40,7 +40,7 @@ head *.fasta
 ¿Qué hace la opcion -n?
 
 ```
-
+head --h
 ```
 
 ¡Muy bien!
@@ -53,7 +53,7 @@ perl cambiar_nombre.pl sample1 WC1.fasta
 
 ¿Qué hizo el script?
 
-## **Ejercicio a casa 1**
+## Ejercicio a casa 1
 
 ¿Como utilizarias este script de forma automatizada?
 
