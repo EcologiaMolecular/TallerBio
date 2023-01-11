@@ -50,7 +50,7 @@ head *.fasta
 ```
 
 
--¿Qué hace la opcion -n?
+- ¿Qué hace la opcion -n?
 
 
 ```
