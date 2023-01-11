@@ -57,7 +57,7 @@ perl cambiar_nombre.pl sample1 WC1.fasta
 
 ¿Como utilizarias este script de forma automatizada?
 
-## Explorano las expresiones regulares
+## Explorando las expresiones regulares
 
 Seguimos, ahora vamos a concatenar todo.
 
