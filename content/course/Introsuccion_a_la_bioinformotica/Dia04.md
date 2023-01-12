@@ -71,7 +71,7 @@ Vamos a ver las instrucciones de Spades para hacer un ensamble sencillo. Para ej
 export PATH=/usr/local/bin/racon/build/bin:/usr/local/bin/SPAdes-3.15.5/bin:$PATH
 ```
 
-# aquí es importante de anteceder la ruta a $PATH, ta que $PATH tiene una versión de un programa (spades) más viejita a la que requiere usar nuestro programa.
+aquí es importante de anteceder la ruta a $PATH, ta que $PATH tiene una versión de un programa (spades) más viejita a la que requiere usar nuestro programa.
 
 Primero vamos a ensamblas las lecturas cortas únicamente con Spades, definiendo un directorio de salida. ¿Qué te parece el resultado?
 
