@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Diana Oaxaca
+title: Ulises Erick Rodriguez Cruz
 
 # Is this the primary user of the site?
 superuser: true
@@ -10,15 +10,12 @@ role: Ayudante
 
 # Organizations/Affiliations
 organizations:
-  - name: IBT - UNAM
+  - name: Instituto de Ecología - UNAM
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
 bio:
 
-interests:
-  - Bioinformatica
-  - Metagenomica
 
 
 # Social/Academic Networking
@@ -38,4 +35,6 @@ user_groups:
   - Teachers
 ---
 
-Diana es biotecnóloga por la UPP, M. en C. Bioquímicas por el IBt de la UNAM, actualmente es estudiante de Doctorado en Ciencias Bioquímicas, adscrita al Centro de Ciencias Genómicas de la UNAM. Su interés se centra en la microbiología abordada desde una perspectiva bioquímica y genómica. Ha participado como ponente en el Curso Nacional de Genómica de Hongos. Desde hace cuatro años participa como ayudante en los Cursos de Herramientas Bioinformáticas para el Análisis de Datos de Secuenciación Masiva de la UUSMB del Instituto de Biotecnología de la UNAM, también ha apoyado en los Talleres Internacionales de Bioinformática y en la empresa Better Lab. Disfruta mucho de aprender y enseñar, en este sentido participa activamente en asesorías relacionados con las ciencias ómicas.
+Ulises Erick Rodriguez Cruz, egresado de la licenciatura en química de alimentos de la facultad de química, realicé la tesis de licenciatura en el centro nacional de referencia en detección de organismos genéticamente modificados (CNRDOGM-Senasica) y la tesis de maestría en el Centro de Investigación y de estudios avanzados (CINVESTAV-IPN) Actualmente realizo la tesis doctoral en el Instituto de Ecología de la UNAM bajo la dirección de la Dra. Valeria Souza.
+
+Desde la licenciatura, me interesó la biotecnología y biología molecular, especialmente me interesa estudiar el fenómeno de la transferencia horizontal de genes y sus consecuencias en la evolución de los organismos. En mi tesis doctoral estoy describiendo a partir de herramientas bioinformáticas la diversidad  del sitio hipersalino y alcalino llamado domos del arqueano, en cuatro Ciénegas Coahuila.
