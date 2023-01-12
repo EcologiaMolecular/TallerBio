@@ -99,6 +99,14 @@ cat *.numbered.fas > ColumnaDeAgua.fas
 perl -i.bak -pe "s/\ .*//g" ColumnaDeAgua.fas
 ```
 
+- Opción para remover la palabra sample:
+
+```
+perl -i.bak -pe "s/\ .*//g" ColumnaDeAgua.fas
+```
+
+- ¿Puedes explicar que paso?
+
 
 - Discute con tu equipo que esta haciendo ese comando
 
