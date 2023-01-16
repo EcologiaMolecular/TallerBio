@@ -16,7 +16,7 @@ mkdir $HOME/00.RawData
 Ahora creemos una liga simbólica al lugar a donde viven los datos.
 
 ```
-ln -s /botete/databases/material_curso_2023/00.RawReads/* $HOME/00.RawData
+ln -s /databases/material_curso_2023/00.RawReads/* $HOME/00.RawData
 ```
 
 ¡Muy bien!
