@@ -70,7 +70,7 @@ java -jar /opt/Trimmomatic-0.39/trimmomatic-0.39.jar PE -threads 4 -phred33 -tri
 
 Ahora en equipos definan los parámetros para el resto de las secuencias hagan el filtrado y veamos finalmente los archivos de salida.
 
-Ahora vamos a crear un archivo intercalado.
+Ahora vamos a crear un archivo intercalado con un script de [**bbtools**](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/).
 
 ```
 mkdir $HOME/03.Interleave
