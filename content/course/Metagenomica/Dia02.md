@@ -62,25 +62,24 @@ mkdir  $HOME/05.Mapeo/
 ```
 
 ```
-ln -s $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa /05.Mapeo/
+ln -s $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa $HOME/05.Mapeo/
 ln -s $HOME/02.Trimmomatic/SRR10997048_*_trimm.fastq .
 ```
 
 Ahora ¡sí! explora las opciones de bbmap, y vamos a hacer nuestro primer mapeo.
 
 ```
-/opt/anaconda3/bin/bbmap.sh ref=SRR10997048_megahit.fasta in=SRR10997048_R1_trimm.fastq in2=SRR10997048_R2_trimm.fastq out=SRR10997048.sam kfilter=22 subfilter=15 maxindel=80 threads=4
+/opt/anaconda3/bin/bbmap.sh ref=$HOME/05.Mapeo/SRR10997048_megahit.fasta in=$HOME/05.Mapeo/SRR10997048_R1_trimm.fastq in2=$HOME/05.Mapeo/SRR10997048_R2_trimm.fastq out=$HOME/05.Mapeo/SRR10997048.sam kfilter=22 subfilter=15 maxindel=80 threads=4
 ```
 
 ```
-samtools view -bShu SRR10997048.sam | samtools sort -@ 5 -o SRR10997048_sorted.bam
-samtools index SRR10997048_sorted.bam
+samtools view -bShu $HOME/05.Mapeo/SRR10997048.sam | samtools sort -@ 5 -o $HOME/05.Mapeo/SRR10997048_sorted.bam
+samtools index $HOME/05.Mapeo/SRR10997048_sorted.bam
 ```
 
 Como cualquier otro programa **jgi_summarize_bam_contig_depths** tiene opciones, podemos revisarlas. 
 
 ```
-/opt/anaconda3/envs/metabat/bin/jgi_summarize_bam_contig_depths --outputDepth SRR10997048-depth.txt SRR10997048_sorted.bam 
-Output depth matrix to SRR10997048-depth.txt
+/opt/anaconda3/envs/metabat/bin/jgi_summarize_bam_contig_depths --outputDepth $HOME/05.Mapeo/SRR10997048-depth.txt $HOME/05.Mapeo/SRR10997048_sorted.bam 
 ```
 
