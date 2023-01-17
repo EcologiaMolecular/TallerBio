@@ -62,7 +62,7 @@ mkdir  $HOME/05.Mapeo/
 ```
 
 ```
-ln -s $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa SRR10997048_megahit.fasta
+ln -s $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa /05.Mapeo/
 ln -s $HOME/02.Trimmomatic/SRR10997048_*_trimm.fastq .
 ```
 
