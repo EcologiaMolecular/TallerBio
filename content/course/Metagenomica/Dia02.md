@@ -1,5 +1,5 @@
 ---
-title: Ensamble
+title: Ejercicio_02_Ensamble
 date: '2021-01-01'
 type: book
 weight: 20
@@ -27,6 +27,7 @@ Ahora vamos a utilizar conda.
 conda env list
 ```
 
+Y el ensamblador [**megahit**](https://github.com/voutcn/megahit).
 
 ```
 conda activate megahit
