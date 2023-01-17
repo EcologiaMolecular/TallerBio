@@ -1,16 +1,16 @@
 ---
 # Display name
-title: Diana Oaxaca
+title: Robin Rohwer
 
 # Is this the primary user of the site?
 superuser: true
 
 # Role/position
-role: Ayudante 
+role: Ponente 
 
 # Organizations/Affiliations
 organizations:
-  - name: IBT - UNAM
+  - name: The University of Texas at Austin
     url: ''
 
 # Short bio (displayed in user profile at end of posts)
@@ -38,4 +38,4 @@ user_groups:
   - Teachers
 ---
 
-Diana es biotecnóloga por la UPP, M. en C. Bioquímicas por el IBt de la UNAM, actualmente es estudiante de Doctorado en Ciencias Bioquímicas, adscrita al Centro de Ciencias Genómicas de la UNAM. Su interés se centra en la microbiología abordada desde una perspectiva bioquímica y genómica. Ha participado como ponente en el Curso Nacional de Genómica de Hongos. Desde hace cuatro años participa como ayudante en los Cursos de Herramientas Bioinformáticas para el Análisis de Datos de Secuenciación Masiva de la UUSMB del Instituto de Biotecnología de la UNAM, también ha apoyado en los Talleres Internacionales de Bioinformática y en la empresa Better Lab. Disfruta mucho de aprender y enseñar, en este sentido participa activamente en asesorías relacionados con las ciencias ómicas.
+Robin is a postdoc at the University of Texas at Austin in the Integrative Biology department. As part of Dr. Brett Baker’s lab, she studies microbial ecology and evolution via a 20-year, 471-metagenome time series from a freshwater lake. Robin received her PhD from the University of Wisconsin-Madison where she worked in Dr. Trina McMahon’s lab. During her PhD, she worked on taxonomic methods for freshwater 16S rRNA gene amplicon data (https://github.com/McMahonLab/TaxAss), and she explored the impact of aquatic invasive species on microbial communities. To learn more about Robin’s work, you can visit her webpage: RobinRohwer.com
