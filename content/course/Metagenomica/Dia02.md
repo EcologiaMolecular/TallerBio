@@ -40,7 +40,7 @@ megahit
 ```
 
 ```
-/opt/anaconda3/pkgs/megahit-1.2.9-h2e03b76_1/bin/megahit --12 $HOME/04.Ensamble/SRR10997048_HQ.fastq  --k-list 21,33,55,77,99,121 --min-count 2 --verbose -t 10 -o $HOME/04.Ensamble/SRR10997048 --out-prefix SRR10997048_megahit
+megahit --12 $HOME/04.Ensamble/SRR10997048_HQ.fastq  --k-list 21,33,55,77,99,121 --min-count 2 --verbose -t 4 -o $HOME/04.Ensamble/SRR10997048 --out-prefix SRR10997048_megahit
 
 ## Ensamblamos una muestra, pero podríamos hacer un ensamble que incluya todas las muestras. Ejemplo:
 #/opt/anaconda3/pkgs/megahit-1.2.9-h2e03b76_1/bin/megahit --12 SRR10997046_HQ.fastq,SRR10997047_HQ.fastq,SRR10997048_HQ.fastq,SRR10997049_HQ.fastq,SRR10997050_HQ.fastq  --k-list 21,33,55,77,99,121 --min-count 2 --verbose -t 10 -o pulque --out-prefix megahit
