@@ -10,8 +10,8 @@ role: Ponente
 
 # Organizations/Affiliations
 organizations:
-  - name: The University of Texas at Austin
-    url: 'RobinRohwer.com'
+  - name: [**The University of Texas at Austin**](RobinRohwer.com)
+    url: ''
 
 # Short bio (displayed in user profile at end of posts)
 bio:
@@ -38,4 +38,4 @@ user_groups:
   - Teachers
 ---
 
-Robin is a postdoc at the University of Texas at Austin in the Integrative Biology department. As part of Dr. Brett Baker’s lab, she studies microbial ecology and evolution via a 20-year, 471-metagenome time series from a freshwater lake. Robin received her PhD from the University of Wisconsin-Madison where she worked in Dr. Trina McMahon’s lab. During her PhD, she worked on taxonomic methods for freshwater 16S rRNA gene amplicon data (https://github.com/McMahonLab/TaxAss), and she explored the impact of aquatic invasive species on microbial communities. To learn more about Robin’s work, you can visit her webpage: RobinRohwer.com
+Robin is a postdoc at the University of Texas at Austin in the Integrative Biology department. As part of Dr. Brett Baker’s lab, she studies microbial ecology and evolution via a 20-year, 471-metagenome time series from a freshwater lake. Robin received her PhD from the University of Wisconsin-Madison where she worked in Dr. Trina McMahon’s lab. During her PhD, she worked on taxonomic methods for freshwater 16S rRNA gene amplicon data (https://github.com/McMahonLab/TaxAss), and she explored the impact of aquatic invasive species on microbial communities. To learn more about Robin’s work, you can visit her [webpage](RobinRohwer.com)
