@@ -49,3 +49,27 @@ Explora las opciones y ahora sí, a calcular bins.
 ```
 run_MaxBin.pl -contig $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa -out  $HOME/07.MaxBin/bin -abund $HOME/05.Mapeo/SRR10997048-depth.txt -max_iteration 2
 ```
+
+# Refinamiento
+
+# [DASTool](https://github.com/cmks/DAS_Tool)
+
+```
+mkdir $HOME/08.DasTool
+```
+
+Preparing input files.
+
+```
+/botete/mvazquez/00.Programs/DAS_Tool/src/Fasta_to_Contig2Bin.sh -i $HOME/07.MaxBin -e fasta > $HOME/08.DasTool/SRR10997048_maxbin.scaffolds2bin.tsv
+```
+
+```
+/botete/mvazquez/00.Programs/DAS_Tool/src/Fasta_to_Contig2Bin.sh -i $HOME/06.Metabat/ -e fa > $HOME/08.DasTool/SRR10997048_metabat.scaffolds2bin.tsv
+```
+
+Ahora si :)
+
+```
+/botete/mvazquez/00.Programs/DAS_Tool/DAS_Tool -i $HOME/08.DasTool/SRR10997048_maxbin.scaffolds2bin.tsv,$HOME/08.DasTool/SRR10997048_metabat.scaffolds2bin.tsv -l metabat,maxbin -c $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa -o pulque_bins --debug -t 4  --search_engine diamond --write_bins
+```
