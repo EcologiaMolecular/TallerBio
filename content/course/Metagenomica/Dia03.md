@@ -71,5 +71,5 @@ Preparing input files.
 Ahora si :)
 
 ```
-/botete/mvazquez/00.Programs/DAS_Tool/DAS_Tool -i $HOME/08.DasTool/SRR10997048_maxbin.scaffolds2bin.tsv,$HOME/08.DasTool/SRR10997048_metabat.scaffolds2bin.tsv -l metabat,maxbin -c $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa -o pulque_bins --debug -t 4  --search_engine diamond --write_bins
+/botete/mvazquez/00.Programs/DAS_Tool/DAS_Tool -i $HOME/08.DasTool/SRR10997048_maxbin.scaffolds2bin.tsv,$HOME/08.DasTool/SRR10997048_metabat.scaffolds2bin.tsv -l metabat,maxbin -c $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa -o $HOME/08.DasTool/SRR10997048_bins --debug -t 4  --search_engine diamond --write_bins
 ```
