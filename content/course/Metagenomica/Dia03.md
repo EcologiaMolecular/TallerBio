@@ -73,3 +73,24 @@ Ahora si :)
 ```
 /botete/mvazquez/00.Programs/DAS_Tool/DAS_Tool -i $HOME/08.DasTool/SRR10997048_maxbin.scaffolds2bin.tsv,$HOME/08.DasTool/SRR10997048_metabat.scaffolds2bin.tsv -l metabat,maxbin -c $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa -o $HOME/08.DasTool/SRR10997048_bins --debug -t 4  --search_engine diamond --write_bins
 ```
+
+# [CheckM](https://github.com/Ecogenomics/CheckM/wiki)
+
+Muy bien, crea un nuevo directorio y entra en él.
+
+```
+mkdir $HOME/09.CheckM
+```
+
+Ahora activemos el ambiente.
+
+```
+conda activate checkm
+```
+
+
+```
+checkm  lineage_wf -t 4 -x fa 08.DasTool/SRR10997048_bins_DASTool_bins/ SRR10997048-log  -f 09.CheckM/CheckM-DAS_Tool_bins.txt
+```
+
+Vamos a explorar la salida de checkM
