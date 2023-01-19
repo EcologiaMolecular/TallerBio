@@ -82,15 +82,19 @@ Muy bien, crea un nuevo directorio y entra en él.
 mkdir $HOME/09.CheckM
 ```
 
-Ahora activemos el ambiente.
+Exportemos el path a donde viven las bases de datos.
 
 ```
-conda activate checkm
+export CHECKM_DATA_PATH=/databases
 ```
-
 
 ```
 checkm  lineage_wf -t 4 -x fa 08.DasTool/SRR10997048_bins_DASTool_bins/ SRR10997048-log  -f 09.CheckM/CheckM-DAS_Tool_bins.txt
 ```
 
 Vamos a explorar la salida de checkM
+
+
+
+
+
