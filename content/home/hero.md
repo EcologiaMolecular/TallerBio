@@ -22,9 +22,7 @@ advanced:
 
 <br>
 
-¡Bienvenido! 
-
-Como parte de los cursos intersemestrales en el Posgrado de Ciencias del Mar y Limnología de la UNAM hemos decidido ofertar estos talleres de bioinformática que te permitirán irte adentrando a este maravilloso mundo y enseñarte cómo manipular este tipo de datos.
+¡Bienvenidos al curso de Metagenomica del INECOL!
 
 ¡Nuestra motivación es enseñar y compartir nuestro conocimiento!
 
