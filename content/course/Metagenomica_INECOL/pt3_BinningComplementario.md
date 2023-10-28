@@ -5,7 +5,7 @@ type: book
 weight: 20
 ---
 
-##Binning 
+## Binning 
 Una vez que hemos escogido que ensamble usar, podemos proceder con el Binning 
 Utilizaremos varios programas para hacer la reconstrucción de los genomas y haremos una comparación de estos.
 
