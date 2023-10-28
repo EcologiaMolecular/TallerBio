@@ -21,6 +21,8 @@ rm results/04.depth/fermentation.megahit.sam
 ```
  *Conversión y ordenamiento del archivo de mapeo*
  Ahora si, para poder agrupar en bins el coensamble, los binneadores requieren de un archivo con las coverturas de cada contig. Afortunadamente ya habíamos mapeado las lecturas, asi que ya tenemos un archivo de mapeo, nos falta convertirlo a formato bam y ordenarlo. Para ello ejecutamos **samtools** (https://www.htslib.org/doc/samtools.html)
+ (module load samtools/1.11/gcc/9.3.0-3fme)
+
  ```
 samtools view -bShu results/04.depth/fermentation.metaspades.sam | samtools sort -@ 80 -o results/04.depth/fermentation_metaspades_sorted.bam
 samtools index results/04.depth/fermentation_metaspades_sorted.bam
@@ -39,7 +41,7 @@ jgi_summarize_bam_contig_depths --outputDepth results/04.depth/fermentation_meta
 ```
 # BINNING con METABAT
 # [MetaBat](https://bitbucket.org/berkeleylab/metabat/src/master/)
-
+(conda activate megabat2)
 Crea una carpeta para metabat. 
 
 ```
