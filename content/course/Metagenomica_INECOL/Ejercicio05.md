@@ -40,6 +40,7 @@ KEGG es una base de datos y un recurso en línea que proporciona información so
 KEGG se utiliza ampliamente en la investigación en biología molecular, bioquímica, genómica y otros campos relacionados para entender la función de genes y proteínas, así como su papel en vías metabólicas y enfermedades. La base de datos contiene información sobre rutas metabólicas, genes, proteínas, compuestos químicos y enfermedades, y ofrece herramientas y recursos para el análisis de datos genómicos y la interpretación de resultados experimentales.
 
 Okay... mucho texto, ahora vamos a utilizar [kofam_scan](https://github.com/takaram/kofam_scan) para anotar las proteínas.
+(module load kofam-scan/1.3.0/gcc/8.3.1-n3v4)
 
 **Vamos a dividirnos en equipos para hacer la anotación de los bins! ya saben de 4 en 4 **
 Ya saben lo primero, organizar su espacio de trabajo creando directorios
