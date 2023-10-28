@@ -28,6 +28,7 @@ ln -s /../03.Analisis_de_metagenomas/data/clean/SRR10997048_HQ.fastq  /results/0
 
 Ahora vamos a utilizar conda.
 Explora la ayuda y según tu experiencia qué parámetros se deberían utilizar del ensamblador [**megahit**](https://github.com/voutcn/megahit).
+(conda activate megahit)
 
 ```
 megahit
@@ -104,6 +105,7 @@ cut -f8 results/04.depth/fermentation_megahit.scafstats | grep -v assignedReads 
 95.428
 ```
 **Conozcamos a QUAST** (https://github.com/ablab/quast)
+(conda activate megahit)
 "Quality Assessment Tool for Genome Assemblies" (Herramienta de Evaluación de Calidad para Ensamblajes de Genomas) es una herramienta de software diseñada para evaluar y analizar la calidad de los ensamblajes de genomas. QUAST es una herramienta versatil que proporciona informacion valiosa sobre la calidad de los ensamblajes genómicos, lo que es fundamental en la investigacion genomica y la bioinformatica para determinar la confiabilidad de los resultados y para orientar mejoras en los ensamblajes si es necesario.
 *Para usar QUAST, debemos activar a un viejo conocido, o sea metagenomics*
 ```
