@@ -10,13 +10,13 @@ weight: 20
 La primer cosa que tenemos que hacer es crear una carpeta donde van a vivir los datos que vamos a trabajar durante el curso.
 
 ```
-mkdir -p 03.Analisis_de_metagenomas/{data/{raw,clean},results}
+mkdir $HOME/00.RawData
 ```
 
 Ahora creemos una liga simbólica al lugar a donde viven los datos.
 
 ```
-ln -s /../../../03.Analisis_de_metagenomas/data/clean/ /.../Nuestro_directorio
+ln -s /databases/material_curso_2023/00.RawReads/* $HOME/00.RawData
 ```
 #Contexto de los datos con los que se trabajara
 *Datos de la fermentación del pulque*
@@ -34,23 +34,22 @@ El articulo original de los datos es: Genomic profiling of bacterial and fungal 
 Una primera cosa que nos gustaría hacer sería ver la calidad de las secuencias a utilizar, para eso vamos a analizar la calidad de las lecturas con  [**fastqc**](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/).
 
 Entonces vamos a crear un nuevo directorio donde van a vivir los resultados de fastqc.
- Y de paso nos adelantamos a crear una para los futuros resultados de trimgalore
 
 ```
-mkdir -p results/{01.fastqc,02.trimgalore}
+mkdir $HOME/01.Fastqc
 ```
 
 Y ahora vamos a correr el programa.
 
 ```
-fastqc data/raw/*.fastq -o results/01.fastqc/
+fastqc -t 4 $HOME/00.RawData/*.fastq -o $HOME/01.Fastqc
 ```
 
 Ahora tenemos que activar conda y usando el entorno Qiime podremos observar las calidades de nuestras secuencias 
 
 ```
-conda activate /.../.../.conda/envs/qiime2-2022.11
-multiqc results/01.fastqc/*.zip -o results/01.fastqc/multiqc
+conda activate /botete/TuUsuario/.conda/envs/qiime2-2022.11
+multiqc 01.Fastqc/*.zip -o 01.Fastqc/multiqc
 ```
 En resumen, esta parte del código ejecuta multiqc en los archivos ZIP en el directorio results/01.fastqc/ y genera un informe de calidad en el directorio 
 
@@ -58,8 +57,10 @@ En resumen, esta parte del código ejecuta multiqc en los archivos ZIP en el dir
 La herramienta TrimGalore nos permite eliminar lecturas de baja calidad, adaptadores, etc. Y con MultiQC, podemos ver las calidades del conjunto de lecturas. Existen otros programas para limpiar las lecturas como Trimmomatic.
 
 ```
+#Creamos el directorio para Trimgalore
+mkdir 02.trimgalore
 #Ejecutamos trim_galore para filtrar
-trim_galore --fastqc -j 45 --paired data/raw/pulquet0_1_10M.fastq data/raw/pulquet0_2_10M.fastq -o results/02.trimgalore/pulquet0_trimgalore
+trim_galore --fastqc -j 45 --paired pulquet0_1_10M.fastq pulquet0_2_10M.fastq -o 02.trimgalore/pulquet0_trimgalore
 ```
 
 ¡Muy bien!
@@ -71,7 +72,7 @@ Vamos a filtrar las lecturas por calidad utilizando [**Trimmomatic**](http://www
 Vamos a crear un directorio de salida.
 
 ```
-mkdir ../results/02.Trimmomatic/zips
+mkdir $Home/results/02.Trimmomatic/zips
 ```
 
 Y ahora vamos a correr el programa.
@@ -87,26 +88,26 @@ Creamos el directorio donde alojaremos las entradas de multiqc y movemos estos a
 
 ```
 mkdir -p results/02.trimgalore/zips
-mv results/02.trimgalore/*/*.zip results/02.trimgalore/zips/
-mv results/02.trimomatic/*/*.zip results/02.trimomatic/zips/
+mv 02.trimgalore/*/*.zip results/02.trimgalore/zips/
+mv 02.trimomatic/*/*.zip results/02.trimomatic/zips/
 ```
 
 Ahora si ejecutamos multiqc que esta en en el ambiente de qiime2, por eso lo vamos a activar. OJO, multiqc puede estar alojado en un ambiente independiente o instalarse fuera de ambientes, en el servidor esta dentro de qiime pero no es una regla.
 
 ```
 #Activamos el ambiente
-conda activate /../../.conda/envs/qiime2-2022.11
+conda activate /botete/TuUsuario/.conda/envs/qiime2-2022.11
 #Ejecutamos multiqc
-multiqc results/02.trimgalore/zips/*.zip -o results/02.trimgalore/zips/multiqc
+multiqc 02.trimgalore/zips/*.zip -o 02.trimgalore/zips/multiqc
 #Podmeos ejecutar multiqc para trimomatic
-multiqc results/02.trimomatic/zips/*.zip -o results/02.trimomatic/zips/multiqc 
+multiqc 02.trimomatic/zips/*.zip -o 02.trimomatic/zips/multiqc 
 ```
 
 Movemos nuestros datos limpios al subdirectorio data/clean
 
 ```
-mv results/02.trimgalore/*/*.fq data/clean/
-mv results/02.trimoamtic/*/*.fq data/clean/
+mv 02.trimgalore/*/*.fq data/clean/
+mv 02.trimoamtic/*/*.fq data/clean/
 ```
 Y descativamos el ambiente
 
