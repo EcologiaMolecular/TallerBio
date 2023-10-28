@@ -37,7 +37,7 @@ Ahora vamos a obtener la información en el formato que necesitan los programas 
 conda activate metabat
 jgi_summarize_bam_contig_depths --outputDepth results/04.depth/fermentation_metaspades_depth.txt results/04.depth/fermentation_metaspades_sorted.bam 
 ```
-#BINNING con METABAT
+# BINNING con METABAT
 # [MetaBat](https://bitbucket.org/berkeleylab/metabat/src/master/)
 
 Crea una carpeta para metabat. 
@@ -56,7 +56,7 @@ metabat2 -i $HOME/04.Ensamble/SRR10997048/SRR10997048_megahit.contigs.fa -a ../0
 #Y desactivamos CONDA 
 conda deactivate
 ```
-#Maxbin
+# Maxbin
 Ahora ejecutemos *Maxbin*(https://sourceforge.net/p/maxbin/code/ci/master/tree/)
 *Activamos el ambiente*
 ```
@@ -72,15 +72,15 @@ conda deactivate
 ```
 Ya casi....
 
-#Vamb 
+# Vamb 
 (https://github.com/RasmussenLab/vamb)
 Corramos Vamb
 ```
 /botete/../.local/bin/vamb
 vamb --fasta results/03.metaspades/contigsftr.fasta --jgi results/04.depth/fermentation_metaspades_depth.txt --minfasta 500000 --outdir results/08.vamb
 ```
-##Refinamiento
-#DAS_Tool
+## Refinamiento
+# DAS_Tool
 (https://github.com/cmks/DAS_Tool)
 *Tenemos los resultados de tres binneadores*, muchos de estos bins estarán repetidos, ejecutaremos DAS_Tool para desreplicar estos bins, el flujo para DAS_Tool es el siguiente:
 
@@ -105,7 +105,7 @@ Ahora si, ejecutemos DAS_Tool:
 ```
 DAS_Tool -i results/09.dastool/fermentation_maxbin.dastool.tsv,results/09.dastool/fermentation_metabat.dastool.tsv,results/09.dastool/fermentation_vamb.dastool.tsv -l maxbin,metabat,vamb -c results/03.metaspades/contigsftr.fasta -o results/09.dastool/fermentation_bins -t 12 --write_bins
 ```
-#CheckM
+# CheckM
 Ya desreplicamos los bins que obtuvimos, pero nos falta evaluar la calidad de estos, para ello ejecutaremos **CheckM**(https://ecogenomics.github.io/CheckM/)
 
 ```
@@ -114,7 +114,7 @@ checkm lineage_wf results/09.dastool/fermentation_bins_DASTool_bins/ results/10.
 
 Recordemos que hay más herramientas para desreplicar como *dRep*(https://github.com/MrOlm/drep) y también para refinar los bins que obtengamos, como *RefineM*(https://github.com/donovan-h-parks/RefineM). Si te es posible, detente a observar tus datos, analiza los resultados, prueba lo que puedas y toma las mejores decisiones.
 
-#Conclusión
+# Conclusión
 **¡Felicidades!** 
 Has aprendido a realizar binning utilizando diversas herramientas en un flujo de trabajo coherente. Asegúrate de explorar las salidas de los binners y las evaluaciones para obtener resultados precisos.
 
