@@ -109,6 +109,7 @@ DAS_Tool -i results/09.dastool/fermentation_maxbin.dastool.tsv,results/09.dastoo
 ```
 # CheckM
 Ya desreplicamos los bins que obtuvimos, pero nos falta evaluar la calidad de estos, para ello ejecutaremos **CheckM**(https://ecogenomics.github.io/CheckM/)
+(conda activate checkm)
 
 ```
 checkm lineage_wf results/09.dastool/fermentation_bins_DASTool_bins/ results/10.checkm/ -x fa -t 40  -f results/10.checkm/checkm_dastool_bins.txt
