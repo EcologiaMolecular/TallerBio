@@ -33,6 +33,7 @@ El articulo original de los datos es: Genomic profiling of bacterial and fungal 
 
 Una primera cosa que nos gustaría hacer sería ver la calidad de las secuencias a utilizar, para eso vamos a analizar la calidad de las lecturas con  [**fastqc**](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/).
 
+
 Entonces vamos a crear un nuevo directorio donde van a vivir los resultados de fastqc.
 
 ```
@@ -53,8 +54,11 @@ multiqc 01.Fastqc/*.zip -o 01.Fastqc/multiqc
 ```
 En resumen, esta parte del código ejecuta multiqc en los archivos ZIP en el directorio results/01.fastqc/ y genera un informe de calidad en el directorio 
 
-#Conoczcamos a Trimgalore
-La herramienta TrimGalore nos permite eliminar lecturas de baja calidad, adaptadores, etc. Y con MultiQC, podemos ver las calidades del conjunto de lecturas. Existen otros programas para limpiar las lecturas como Trimmomatic.
+# Conozcamos a Trimgalore
+(module load trimgalore/0.6.4/gcc/9.3.0-4hih)
+La herramienta TrimGalore nos permite eliminar lecturas de baja calidad, adaptadores, etc. 
+Y con *MultiQC* (module load py-multiqc/1.7/gcc/9.3.0-yslf
+), podemos ver las calidades del conjunto de lecturas.
 
 ```
 #Creamos el directorio para Trimgalore
