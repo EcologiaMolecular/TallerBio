@@ -20,7 +20,7 @@ mv $HOME/10.Bins/*.fa  $HOME/10.Bins/Genoma
 ```
 
 Vamos a utilizar [prodigal](https://github.com/hyattpd/Prodigal) para predecir las proteínas:
-
+(module load prodigal/2.6.3/gcc/9.3.0-ztxs)
 ```
 cd $HOME/10.Bins/Genoma/
 for i in $(ls *.fa); do prodigal -i $i -o $HOME/10.Bins/Proteoma/$i.txt -a $HOME/10.Bins/Proteoma/$i.faa ; done
