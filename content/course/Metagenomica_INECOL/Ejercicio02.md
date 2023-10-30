@@ -23,10 +23,10 @@ Crea ligas simbólicas a los archivos fastq que vamos a utilizar para ensamblar 
 mkdir results
 ```
 ```
-mkdir 03.Ensambles
+mkdir 04.Ensambles
 ```
 ```
-ln -s /databases/material_curso_2023/00.Rawdreads  /results/03.Ensamble
+ln -s /databases/material_curso_2023/00.Rawdreads  /results/04.Ensamble
 ```
 
 ¡Ahora si!
