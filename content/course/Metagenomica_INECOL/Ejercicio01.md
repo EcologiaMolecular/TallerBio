@@ -1,5 +1,5 @@
 ---
-title: Ejercicio_01_Filtrado_de_lecturas
+title: Ejercicio_01_Filtrado de lecturas
 date: '2023-10-25'
 type: book
 weight: 20
