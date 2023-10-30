@@ -21,7 +21,7 @@ conda activate metagenomics
 Crea ligas simbólicas a los archivos fastq que vamos a utilizar para ensamblar y creamos el directorio de los ensambles. 
 
 ```
-ln -s /../03.Analisis_de_metagenomas/data/clean/SRR10997048_HQ.fastq  /results/04.Ensamble
+ln -s /databases/material_curso_2023/00.Rawdreads  /results/04.Ensamble
 ```
 
 ¡Ahora si!
