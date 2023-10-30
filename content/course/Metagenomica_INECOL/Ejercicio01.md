@@ -1,10 +1,8 @@
 ---
 title: Ejercicio_01_Filtrado_de_lecturas
-date: '2023-10-24'
-output: 
-  html_document:
-    toc: true
-    toc_float: true
+date: '2023-10-25'
+type: book
+weight: 20
 ---
 
 ## Filtrado de lecturas
