@@ -114,7 +114,19 @@ module load py-multiqc/1.7/gcc/9.3.0-yslf
 Ahora corramos el programa.
 
 ```
-srun --mem 16G -n 1 -p q1 multiqc 03.Trimgalore/*.zip -o 04.Multiqc
+srun --mem 16G -n 1 -p q1 multiqc 03.Trimgalore/pulquet0_trimgalore/*.zip -o 04.Multiqc
+```
+
+# Datos finales a ensamblar 
+
+Ahora vamos a crear un archivo intercalado con un script de [**bbtools**](https://jgi.doe.gov/data-and-tools/software-tools/bbtools/).
+
+```
+mkdir $HOME/05.Interleave
+```
+
+```
+reformat.sh threads=10 in1=02.Trimmomatic/SRR10997048_R1_trimm.fastq in2=02.Trimmomatic/SRR10997048_R2_trimm.fastq out=03.Interleave/SRR10997048_HQ.fastq
 ```
 
 Recuerda adaptar los nombres de archivo y directorios según tu estructura de carpetas y archivos.
