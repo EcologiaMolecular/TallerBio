@@ -90,7 +90,7 @@ Si deseas, también podemos probar  [TrimGalore](https://github.com/FelixKrueger
 Primero, creemos un directorio para los resultados de TrimGalore.
 
 ```
-mkdir $HOME/04.Trimgalore
+mkdir $HOME/03.Trimgalore
 ```
 
 A continuación, carguemos el módulo necesario.
@@ -102,7 +102,19 @@ module load trimgalore/0.6.4/gcc/9.3.0-4hih
 Finalmente, ejecutemos TrimGalore.
 
 ```
-srun --mem 16G -n 1 -p q2 trim_galore --fastqc -j 1 --paired pulquet0_1_10M.fastq pulquet0_2_10M.fastq -o 02.trimgalore/pulquet0_trimgalore
+srun --mem 16G -n 1 -p q1 trim_galore --fastqc -j 1 --paired 00.RawData/pulquet0_1_10M_val_1.fq 00.RawData/pulquet0_2_10M_val_2.fq -o 03.Trimgalore/pulquet0_trimgalore
+```
+
+Ahora con [**MultiQC**] podemos ver las calidades del conjunto de lecturas.
+
+```
+module load py-multiqc/1.7/gcc/9.3.0-yslf
+```
+
+Ahora corramos el programa.
+
+```
+srun --mem 16G -n 1 -p q1 multiqc 03.Trimgalore/*.zip -o 04.Multiqc
 ```
 
 Recuerda adaptar los nombres de archivo y directorios según tu estructura de carpetas y archivos.
