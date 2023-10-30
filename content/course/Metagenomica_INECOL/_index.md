@@ -1,6 +1,5 @@
 ---
 title: 🤖 Metagenómica
-linkTitle: Introduccón
 summary: Aprender a analizar datos metagenómicos utilizando herramientas de software libre. 
 date: '2023-01-09'
 type: book
