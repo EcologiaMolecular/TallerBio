@@ -214,7 +214,7 @@ setwd(ruta_original)
 ```
 
 ```{r, eval=FALSE}
-change_bin_name("/botete/mvazquez/10.Bins", "pulque")
+change_bin_name("/colocar/ruta/de/Bins/", "pulque")
 ```
 
 
@@ -236,7 +236,7 @@ add_names_to_seqs <- function(nombre_del_archivo){
 }
 
 files <- list.files("10.Bins/")
-files <- paste0("/botete/mvazquez/10.Bins/", files)
+files <- paste0("/colocar/ruta/de/output", files)
 
 map(files, add_names_to_seqs)
 ```
