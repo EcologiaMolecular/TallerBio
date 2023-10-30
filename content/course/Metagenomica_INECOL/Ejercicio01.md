@@ -1,5 +1,5 @@
 ---
-title: Filtrado de lecturas - Ejercicio 01
+title: Ejercicio_01_Filtrado_de_lecturas
 date: '2023-10-24'
 output: 
   html_document:
@@ -11,7 +11,7 @@ output:
 
 Para comenzar, debemos crear una carpeta donde almacenaremos los datos que utilizaremos en el curso.
 
-```bash
+```
 mkdir $HOME/00.RawData
 ```
 
