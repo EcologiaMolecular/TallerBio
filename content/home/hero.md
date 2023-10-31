@@ -22,7 +22,7 @@ advanced:
 
 <br>
 
-¡Bienvenidos al curso de Metagenomica del INECOL!
+¡Bienvenidos al curso de Metagenómica del INECOL!
 
 ¡Nuestra motivación es enseñar y compartir nuestro conocimiento!
 
