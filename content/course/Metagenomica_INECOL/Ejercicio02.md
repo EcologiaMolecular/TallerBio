@@ -1,5 +1,5 @@
 ---
-title: Ejercicio_02-Ensamble
+title: Ejercicio_02_Ensamble
 date: '2021-01-01'
 type: book
 weight: 20

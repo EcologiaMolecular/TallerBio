@@ -1,5 +1,5 @@
 ---
-title: Ejercicio_05-Inferencia_Metabólica
+title: Ejercicio_05-Inferencia_Metabolica
 date: '2023-10-26'
 type: book
 weight: 20
